@@ -15,20 +15,14 @@ class AtivoB3(models.Model):
     sigla = models.CharField(max_length=10, primary_key=True)
     descricao = models.CharField(max_length=200)
 
-
-class TunelPreco(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
-    limiteSuperior = models.IntegerField()
-    limiteInferior = models.IntegerField()
-
+    def __str__(self):
+        return self.sigla
 
 class Monitoracao(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     periodicidade = models.IntegerField()
-    investidor = models.ForeignKey(Investidor, on_delete=models.SET_NULL,
-                                blank=True, null=True)
-    ativoB3 = models.ForeignKey(AtivoB3, on_delete=models.SET_NULL, 
-                                blank=True, null=True)
-    tunelPreco = models.OneToOneField(TunelPreco, on_delete=models.SET_NULL, 
-                                      blank=True, null=True)
-    ultimo_valor = models.IntegerField(null=True)
+    investidor = models.ForeignKey(Investidor, on_delete=models.CASCADE)
+    ativoB3 = models.ForeignKey(AtivoB3, on_delete=models.CASCADE)
+    ultimo_valor = models.IntegerField(blank=True, null=True)
+    limiteSuperior = models.IntegerField(default=0)
+    limiteInferior = models.IntegerField(default=0)

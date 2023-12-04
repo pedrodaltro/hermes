@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bem vindo ao Hermes</h1>
+<form action="{% url 'salao_investidor' %}" >
+    <select name="investidor">
+        <option disabled> Selecione o investidor</option>
+        {% for investidor in investidores %}
+            <option value= {{ investidor.cpf }}>{{ investidor.nome }}</option>
+        {% endfor %}
+    </select>
+    <button class="btn btn-primary" type="submit">Buscar</button>
+</form>
+</body>
+</html>
