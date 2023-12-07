@@ -1,51 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title><!DOCTYPE html>
-        <html lang="en">
-        <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
+    <title>Hermes</title>
 </head>
 <body>
 <h1> {{ investidor.nome }} aqui você pode observar a evolução dos seus ativos cadastrados</h1>
-    <form action="." method="POST">
-        {% csrf_token %}
-        {{ form.as_table }}
-        <input type="hidden" name="id_investidor" value="{{investidor.cpf}}">
-        <input type="submit" value="Salvar">
-    </form>
 </body>
-</html></title>
-</head>
+
 <body>
-{% block content %}
-
-    <h1>'My Table'</h1>
-    <table class="table">
-      <thead>
-          <tr>
-              <th>Ativo B3</th>
-              <th>Período</th>
-              <th>Ultimo Valor</th>
-              <th>Valor Compra</th>
-              <th>Valor Venda</th>
-          </tr>
-      </thead>
-      <tbody>
-            {% for ativo in ativos_monitorados %}
-                <tr>
-                    <td>{{ ativo.ativoB3 }}</td>
-                    <td>{{ ativo.periodicidade }}</td>
-                    <td>{{ ativo.ultimo_valor }}</td>
-                    <td>{{ ativo.limiteInferior }}</td>
-                    <td>{{ ativo.limiteSuperior }}</td>
-                </tr>
-            {% endfor %}
-      </tbody>
-    </table>
-
-{% endblock %}
+<form action="{% url 'ativo' %}" >
+    <select name="monitoracao">
+        <option disabled> Selecione o ativo</option>
+        {% for monitoracao in monitoracoes %}
+            <option value= {{ monitoracao.id }}>{{ monitoracao.ativoB3.sigla }}</option>
+        {% endfor %}
+    </select>
+    <button class="btn btn-primary" type="submit">Buscar</button>
+</form>
 </body>
 </html>

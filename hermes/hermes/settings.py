@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
-from pathlib import Path
 import os
+from pathlib import Path
+from decouple import config
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -44,9 +44,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'celery',
-    # 'django_celery_beat',
-    'cotacao.apps.CotacaoConfig'
+    'cotacao.apps.CotacaoConfig',
+    'django_celery_beat',
+    'django_celery_results',
 ]
 
 MIDDLEWARE = [
@@ -162,12 +162,14 @@ EMAIL_HOST_USER = 'pedro.daltro@gmail.com'
 EMAIL_HOST_PASSWORD = 'tkyuibcnuzsjiwsf'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
+# save Celery task results in Django's database
+CELERY_RESULT_BACKEND = "django-db"
+# This configures Redis as the datastore between Django + Celery
 
-# set CELERY settings with CELERY_{}
-# user = os.getenv('RABBITMQ_DEFAULT_USER')
-# password = os.getenv('RABBITMQ_DEFAULT_PASS')
-# CELERY_BROKER_URL = "amqp://guest:guest@rabbitmq:5672/"
-# CELERY_TIMEZONE = 'Asia/Seoul'
-# CELERY_ENABLE_UTC = False
-# CELERY_TASK_SERIALIZER = 'json'
-# CELERY_ACCEPT_CONTENT = ['json']
+CELERY_BROKER_URL = config('CELERY_BROKER_REDIS_URL', default='redis://localhost:6379')
+
+# if you out to use os.environ the config is:
+# CELERY_BROKER_URL = os.environ.get('CELERY_BROKER_REDIS_URL', 'redis://localhost:6379')
+
+# this allows you to schedule items in the Django admin.
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers.DatabaseScheduler'

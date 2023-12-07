@@ -5,7 +5,7 @@ from cotacao.models import Investidor, Monitoracao
 class InvestidorForm(forms.ModelForm):
     class Meta:
         model = Investidor
-        fields = "__all__"
+        exclude = ["id"]
 
 
 class MonitoracaoForm(forms.ModelForm):

@@ -1,73 +1,45 @@
-from django.shortcuts import render
-from datetime import datetime
-from django.http import HttpResponse
-
+from django.shortcuts import render, redirect
 from .forms import InvestidorForm, MonitoracaoForm
-from .models import Investidor, AtivoB3, Monitoracao
-import pandas_datareader.data as pdr
-import yfinance
-
-
-yfinance.pdr_override()
+from .models import Investidor, Monitoracao, Cotacao
 
 
 def home(request):
     investidores = Investidor.objects.all()
-    return render(request, 'index.html', {'investidores': investidores})
+    context = {
+        'investidores': investidores
+    }
+    return render(request, 'index.html', context=context)
 
 
-def salvar(request):
-    novo_investidor = Investidor()
-    novo_investidor.email = request.POST.get('email')
-    novo_investidor.nome = request.POST.get('nome')
-    novo_investidor.cpf = request.POST.get('cpf')
-    novo_investidor.save()
-
-    investidores = Investidor.objects.all()
-    return render(request, 'index.html', {'investidores': investidores})
-
-
-def cotar(request):
-    resultado = pegar_cotacao(["VALE3.SA", "PETR3.SA", "BVSP"])
-    print(resultado)
-    return HttpResponse(resultado)
-
-
-def pegar_cotacao(ativos):
-    data = datetime.now()
-    tabela_cotacoes = pdr.get_data_yahoo(ativos, data, data)
-
-    return tabela_cotacoes
-
-
-def form_modelform(request):
-    if request.method == "GET":
-        form = InvestidorForm()
-        context = {
-            'form': form
-        }
-        return render(request, 'formulario_modelform.html', context=context)
-    else:
-        form = InvestidorForm(request.POST)
+def ativo(request):
+    if request.method == "POST":
+        form = MonitoracaoForm(request.POST)
         if form.is_valid():
-            investidor = form.save()
-            form = InvestidorForm()
-        context = {
-            'form': form
-        }
-        return render(request, 'formulario_modelform.html', context=context)
+            form.save()
+    monitoracao_id = request.GET.get('monitoracao')
+    cotacoes = Cotacao.objects.filter(monitoracao=monitoracao_id)
+    if not cotacoes:
+        ativoB3 = Monitoracao.objects.get(id=monitoracao_id).ativoB3_id
+    else:
+        ativoB3 = cotacoes.first().monitoracao.ativoB3_id
+    form = MonitoracaoForm()
+    context = {
+        'form': form,
+        'ativoB3': ativoB3,
+        'cotacoes': cotacoes
+    }
+    return render(request, 'ativo.html', context=context)
 
 
-def salao_investidor(request):
+def salao_investidor(request, id):
     if request.method == 'GET':
-        cpf_investidor = request.GET.get('investidor')
-        investidor = Investidor.objects.get(cpf__exact=cpf_investidor)
-        ativos_monitorados = Monitoracao.objects.filter(investidor=cpf_investidor)
+        investidor = Investidor.objects.get(id=id)
+        monitoracoes = Monitoracao.objects.filter(investidor=id)
         form = MonitoracaoForm()
         context = {
             'form': form,
             'investidor': investidor,
-            'ativos_monitorados': ativos_monitorados
+            'monitoracoes': monitoracoes
         }
         return render(request, 'salao_investidor.html', context=context)
     else:
@@ -80,10 +52,66 @@ def salao_investidor(request):
             monitoracao.investidor = investidor
             monitoracao.save()
             form = MonitoracaoForm()
-        ativos_b3 = AtivoB3.objects.all()
         context = {
             'form': form,
             'investidor': investidor,
             'ativos_monitorados': ativos_monitorados
         }
         return render(request, 'salao_investidor.html', context=context)
+
+
+def cadastrar_investidor(request):
+    if request.method == "POST":
+        form = InvestidorForm(request.POST)
+        if form.is_valid():
+            form.save()
+            investidores = Investidor.objects.all()
+            context = {
+                'investidores': investidores
+            }
+            return render(request, 'index.html', context=context)
+
+    form = InvestidorForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'cadastrar_investidor.html', context=context)
+
+
+def editar_investidor(request, id):
+    investidor = Investidor.objects.get(id=id)
+    if request.method == 'POST':
+        form = InvestidorForm(request.POST, instance=investidor)
+        if form.is_valid():
+            form.save()
+            investidores = Investidor.objects.all()
+            context = {
+                'investidores': investidores
+            }
+            return render(request, 'index.html', context=context)
+    context = {'form': InvestidorForm(instance=investidor), 'id': id}
+    return render(request, 'editar_investidor.html', context)
+
+
+def excluir_investidor(request, id):
+    print(id)
+    investidor = Investidor.objects.get(id=id)
+    print('investidor', investidor)
+    investidor.delete()
+    investidores = Investidor.objects.all()
+    context = {
+        'investidores': investidores
+    }
+    return render(request, 'index.html', context=context)
+
+
+def cadastrar_monitoracao(request):
+    pass
+
+
+def editar_monitoracao(request, pk):
+    pass
+
+
+def excluir_monitoracao(request, pk):
+    pass

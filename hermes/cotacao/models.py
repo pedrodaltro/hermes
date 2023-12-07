@@ -3,12 +3,12 @@ import uuid
 
 
 class Investidor(models.Model):
-    cpf = models.CharField(max_length=11, primary_key=True)
-    email = models.EmailField(max_length=250, default='ok@ok.com')
+    id = models.CharField(primary_key=True,default=uuid.uuid4, editable=False, max_length=36)
+    email = models.EmailField(max_length=250)
     nome = models.CharField(max_length=200)
 
     def __str__(self):
-        return self.cpf
+        return self.nome
 
 
 class AtivoB3(models.Model):
@@ -19,10 +19,15 @@ class AtivoB3(models.Model):
         return self.sigla
 
 class Monitoracao(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    id = models.CharField(primary_key=True,default=uuid.uuid4, editable=False, max_length=36)
     periodicidade = models.IntegerField()
     investidor = models.ForeignKey(Investidor, on_delete=models.CASCADE)
     ativoB3 = models.ForeignKey(AtivoB3, on_delete=models.CASCADE)
-    ultimo_valor = models.IntegerField(blank=True, null=True)
     limiteSuperior = models.IntegerField(default=0)
     limiteInferior = models.IntegerField(default=0)
+
+class Cotacao(models.Model):
+    id = models.CharField(primary_key=True,default=uuid.uuid4, editable=False, max_length=36)
+    dataHora = models.DateTimeField(blank=True, null=True)
+    valor = models.IntegerField(blank=True, null=True)
+    monitoracao = models.ForeignKey(Monitoracao, on_delete=models.CASCADE)
