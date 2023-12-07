@@ -1,0 +1,2124 @@
+[
+    {
+        "siglar": "MGLU3",
+        "descricao": "Magazine Luiza"
+    },
+    {
+        "siglar": "PETR4",
+        "descricao": "Petrobras"
+    },
+    {
+        "siglar": "HAPV3",
+        "descricao": "Hapvida"
+    },
+    {
+        "siglar": "AMER3",
+        "descricao": "Americanas"
+    },
+    {
+        "siglar": "CMIG4",
+        "descricao": "CEMIG"
+    },
+    {
+        "siglar": "BBDC4",
+        "descricao": "Banco Bradesco"
+    },
+    {
+        "siglar": "CPLE6",
+        "descricao": "Copel"
+    },
+    {
+        "siglar": "LREN3",
+        "descricao": "Lojas Renner"
+    },
+    {
+        "siglar": "CVCB3",
+        "descricao": "CVC"
+    },
+    {
+        "siglar": "B3SA3",
+        "descricao": "B3"
+    },
+    {
+        "siglar": "ITUB4",
+        "descricao": "Itaú Unibanco"
+    },
+    {
+        "siglar": "ITSA4",
+        "descricao": "Itaúsa"
+    },
+    {
+        "siglar": "ABEV3",
+        "descricao": "Ambev"
+    },
+    {
+        "siglar": "VALE3",
+        "descricao": "Vale"
+    },
+    {
+        "siglar": "SOMA3",
+        "descricao": "Grupo Soma"
+    },
+    {
+        "siglar": "CIEL3",
+        "descricao": "Cielo"
+    },
+    {
+        "siglar": "RAIZ4",
+        "descricao": "Raízen"
+    },
+    {
+        "siglar": "CMIN3",
+        "descricao": "CSN Mineração"
+    },
+    {
+        "siglar": "GOAU4",
+        "descricao": "Metalúrgica Gerdau"
+    },
+    {
+        "siglar": "COGN3",
+        "descricao": "Cogna"
+    },
+    {
+        "siglar": "GOLL4",
+        "descricao": "GOL"
+    },
+    {
+        "siglar": "PETR3",
+        "descricao": "Petrobras"
+    },
+    {
+        "siglar": "RAIL3",
+        "descricao": "Rumo"
+    },
+    {
+        "siglar": "AZUL4",
+        "descricao": "Azul"
+    },
+    {
+        "siglar": "GGBR4",
+        "descricao": "Gerdau"
+    },
+    {
+        "siglar": "LWSA3",
+        "descricao": "Locaweb"
+    },
+    {
+        "siglar": "PETZ3",
+        "descricao": "Petz"
+    },
+    {
+        "siglar": "TIMS3",
+        "descricao": "TIM"
+    },
+    {
+        "siglar": "ENEV3",
+        "descricao": "Eneva"
+    },
+    {
+        "siglar": "VAMO3",
+        "descricao": "Grupo Vamos"
+    },
+    {
+        "siglar": "AURE3",
+        "descricao": "VTRM ENERGIA PARTICIPAÃiES S.A."
+    },
+    {
+        "siglar": "BEEF3",
+        "descricao": "Minerva"
+    },
+    {
+        "siglar": "GMAT3",
+        "descricao": "Grupo Mateus"
+    },
+    {
+        "siglar": "MRFG3",
+        "descricao": "Marfrig"
+    },
+    {
+        "siglar": "POMO4",
+        "descricao": "Marcopolo"
+    },
+    {
+        "siglar": "CRFB3",
+        "descricao": "Carrefour Brasil"
+    },
+    {
+        "siglar": "BRFS3",
+        "descricao": "BRF"
+    },
+    {
+        "siglar": "QUAL3",
+        "descricao": "Qualicorp"
+    },
+    {
+        "siglar": "JBSS3",
+        "descricao": "JBS"
+    },
+    {
+        "siglar": "ASAI3",
+        "descricao": "Assaí"
+    },
+    {
+        "siglar": "USIM5",
+        "descricao": "Usiminas"
+    },
+    {
+        "siglar": "EQTL3",
+        "descricao": "Equatorial Energia"
+    },
+    {
+        "siglar": "IFCM3",
+        "descricao": "Infracommerce"
+    },
+    {
+        "siglar": "MRVE3",
+        "descricao": "MRV"
+    },
+    {
+        "siglar": "NTCO3",
+        "descricao": "Natura"
+    },
+    {
+        "siglar": "PCAR3",
+        "descricao": "Grupo Pão de Açúcar"
+    },
+    {
+        "siglar": "BBDC3",
+        "descricao": "Banco Bradesco"
+    },
+    {
+        "siglar": "ANIM3",
+        "descricao": "Ânima Educação"
+    },
+    {
+        "siglar": "CSNA3",
+        "descricao": "Siderúrgica Nacional"
+    },
+    {
+        "siglar": "PRIO3",
+        "descricao": "PetroRio"
+    },
+    {
+        "siglar": "HBSA3",
+        "descricao": "Hidrovias do Brasil"
+    },
+    {
+        "siglar": "ELET3",
+        "descricao": "Eletrobras"
+    },
+    {
+        "siglar": "SEQL3",
+        "descricao": "Sequoia Logística"
+    },
+    {
+        "siglar": "BBAS3",
+        "descricao": "Banco do Brasil"
+    },
+    {
+        "siglar": "SLCE3",
+        "descricao": "SLC Agrícola"
+    },
+    {
+        "siglar": "RDOR3",
+        "descricao": "Rede D'Or"
+    },
+    {
+        "siglar": "GFSA3",
+        "descricao": "Gafisa"
+    },
+    {
+        "siglar": "CYRE3",
+        "descricao": "Cyrela"
+    },
+    {
+        "siglar": "CBAV3",
+        "descricao": "CBA"
+    },
+    {
+        "siglar": "RENT3",
+        "descricao": "Localiza"
+    },
+    {
+        "siglar": "UGPA3",
+        "descricao": "Ultrapar"
+    },
+    {
+        "siglar": "CSAN3",
+        "descricao": "Cosan"
+    },
+    {
+        "siglar": "SIMH3",
+        "descricao": "Simpar"
+    },
+    {
+        "siglar": "RRRP3",
+        "descricao": "3R Petroleum"
+    },
+    {
+        "siglar": "DXCO3",
+        "descricao": "Dexco"
+    },
+    {
+        "siglar": "CCRO3",
+        "descricao": "Grupo CCR"
+    },
+    {
+        "siglar": "TOTS3",
+        "descricao": "Totvs"
+    },
+    {
+        "siglar": "CEAB3",
+        "descricao": "C&A"
+    },
+    {
+        "siglar": "LJQQ3",
+        "descricao": "Lojas Quero-Quero"
+    },
+    {
+        "siglar": "SBFG3",
+        "descricao": "Grupo SBF"
+    },
+    {
+        "siglar": "RADL3",
+        "descricao": "RaiaDrogasil"
+    },
+    {
+        "siglar": "VBBR3",
+        "descricao": "Vibra Energia"
+    },
+    {
+        "siglar": "CPLE3",
+        "descricao": "Copel"
+    },
+    {
+        "siglar": "ALPA4",
+        "descricao": "Alpargatas"
+    },
+    {
+        "siglar": "OIBR3",
+        "descricao": "Oi"
+    },
+    {
+        "siglar": "STBP3",
+        "descricao": "Santos Brasil"
+    },
+    {
+        "siglar": "BBSE3",
+        "descricao": "BB Seguridade"
+    },
+    {
+        "siglar": "AERI3",
+        "descricao": "Aeris Energy"
+    },
+    {
+        "siglar": "TRPL4",
+        "descricao": "Transmissão Paulista"
+    },
+    {
+        "siglar": "WEGE3",
+        "descricao": "WEG"
+    },
+    {
+        "siglar": "MULT3",
+        "descricao": "Multiplan"
+    },
+    {
+        "siglar": "SUZB3",
+        "descricao": "Suzano"
+    },
+    {
+        "siglar": "SBSP3",
+        "descricao": "Sabesp"
+    },
+    {
+        "siglar": "MLAS3",
+        "descricao": "Multilaser"
+    },
+    {
+        "siglar": "MOVI3",
+        "descricao": "Movida"
+    },
+    {
+        "siglar": "RCSL4",
+        "descricao": "Recrusul"
+    },
+    {
+        "siglar": "IRBR3",
+        "descricao": "IRB Brasil RE"
+    },
+    {
+        "siglar": "GUAR3",
+        "descricao": "Guararapes"
+    },
+    {
+        "siglar": "POSI3",
+        "descricao": "Positivo"
+    },
+    {
+        "siglar": "BRAP4",
+        "descricao": "Bradespar"
+    },
+    {
+        "siglar": "TEND3",
+        "descricao": "Construtora Tenda"
+    },
+    {
+        "siglar": "ENAT3",
+        "descricao": "Enauta"
+    },
+    {
+        "siglar": "CXSE3",
+        "descricao": "Caixa Seguridade"
+    },
+    {
+        "siglar": "AZEV4",
+        "descricao": "Azevedo & Travassos"
+    },
+    {
+        "siglar": "ECOR3",
+        "descricao": "EcoRodovias"
+    },
+    {
+        "siglar": "EMBR3",
+        "descricao": "Embraer"
+    },
+    {
+        "siglar": "SAPR4",
+        "descricao": "Sanepar"
+    },
+    {
+        "siglar": "YDUQ3",
+        "descricao": "YDUQS"
+    },
+    {
+        "siglar": "SMFT3",
+        "descricao": "Smart Fit"
+    },
+    {
+        "siglar": "HYPE3",
+        "descricao": "Hypera"
+    },
+    {
+        "siglar": "VIVT3",
+        "descricao": "Vivo"
+    },
+    {
+        "siglar": "EZTC3",
+        "descricao": "EZTEC"
+    },
+    {
+        "siglar": "BRKM5",
+        "descricao": "Braskem"
+    },
+    {
+        "siglar": "BRSR6",
+        "descricao": "Banrisul"
+    },
+    {
+        "siglar": "JHSF3",
+        "descricao": "JHSF"
+    },
+    {
+        "siglar": "ESPA3",
+        "descricao": "Espaçolaser"
+    },
+    {
+        "siglar": "ZAMP3",
+        "descricao": "Zamp"
+    },
+    {
+        "siglar": "ARZZ3",
+        "descricao": "Arezzo"
+    },
+    {
+        "siglar": "AESB3",
+        "descricao": "AES Brasil"
+    },
+    {
+        "siglar": "RECV3",
+        "descricao": "PetroRecôncavo"
+    },
+    {
+        "siglar": "VIVA3",
+        "descricao": "Vivara"
+    },
+    {
+        "siglar": "FLRY3",
+        "descricao": "Fleury"
+    },
+    {
+        "siglar": "KLBN4",
+        "descricao": "Klabin"
+    },
+    {
+        "siglar": "MDIA3",
+        "descricao": "M. Dias Branco"
+    },
+    {
+        "siglar": "MEAL3",
+        "descricao": "IMC Alimentação"
+    },
+    {
+        "siglar": "MBLY3",
+        "descricao": "Mobly"
+    },
+    {
+        "siglar": "CSMG3",
+        "descricao": "COPASA"
+    },
+    {
+        "siglar": "NEOE3",
+        "descricao": "Neoenergia"
+    },
+    {
+        "siglar": "GGPS3",
+        "descricao": "GPS"
+    },
+    {
+        "siglar": "ONCO3",
+        "descricao": "Oncoclínicas"
+    },
+    {
+        "siglar": "MEGA3",
+        "descricao": "OMEGA ENERGIA S.A."
+    },
+    {
+        "siglar": "PSSA3",
+        "descricao": "Porto Seguro"
+    },
+    {
+        "siglar": "BPAN4",
+        "descricao": "Banco Pan"
+    },
+    {
+        "siglar": "EGIE3",
+        "descricao": "Engie"
+    },
+    {
+        "siglar": "TTEN3",
+        "descricao": "3tentos"
+    },
+    {
+        "siglar": "CURY3",
+        "descricao": "Cury"
+    },
+    {
+        "siglar": "KEPL3",
+        "descricao": "Kepler Weber"
+    },
+    {
+        "siglar": "ODPV3",
+        "descricao": "Odontoprev"
+    },
+    {
+        "siglar": "SMTO3",
+        "descricao": "São Martinho"
+    },
+    {
+        "siglar": "CASH3",
+        "descricao": "Méliuz"
+    },
+    {
+        "siglar": "MTRE3",
+        "descricao": "Mitre Realty"
+    },
+    {
+        "siglar": "HBOR3",
+        "descricao": "Helbor"
+    },
+    {
+        "siglar": "INTB3",
+        "descricao": "Intelbras"
+    },
+    {
+        "siglar": "GRND3",
+        "descricao": "Grendene"
+    },
+    {
+        "siglar": "RANI3",
+        "descricao": "Irani"
+    },
+    {
+        "siglar": "CAML3",
+        "descricao": "Camil Alimentos"
+    },
+    {
+        "siglar": "DIRR3",
+        "descricao": "Direcional"
+    },
+    {
+        "siglar": "CLSA3",
+        "descricao": "ClearSale"
+    },
+    {
+        "siglar": "LIGT3",
+        "descricao": "Light"
+    },
+    {
+        "siglar": "CPFE3",
+        "descricao": "CPFL Energia"
+    },
+    {
+        "siglar": "JALL3",
+        "descricao": "Jalles Machado"
+    },
+    {
+        "siglar": "AZEV3",
+        "descricao": "Azevedo & Travassos"
+    },
+    {
+        "siglar": "RAPT4",
+        "descricao": "Randon"
+    },
+    {
+        "siglar": "AMBP3",
+        "descricao": "Ambipar"
+    },
+    {
+        "siglar": "TRIS3",
+        "descricao": "Trisul"
+    },
+    {
+        "siglar": "PLPL3",
+        "descricao": "Plano&Plano"
+    },
+    {
+        "siglar": "ELET6",
+        "descricao": "Eletrobras"
+    },
+    {
+        "siglar": "BMGB4",
+        "descricao": "Banco BMG"
+    },
+    {
+        "siglar": "MYPK3",
+        "descricao": "Iochpe-Maxion"
+    },
+    {
+        "siglar": "PGMN3",
+        "descricao": "Pague Menos"
+    },
+    {
+        "siglar": "FIQE3",
+        "descricao": "Unifique"
+    },
+    {
+        "siglar": "PTBL3",
+        "descricao": "Portobello"
+    },
+    {
+        "siglar": "ABCB4",
+        "descricao": "Banco ABC Brasil"
+    },
+    {
+        "siglar": "CMIG3",
+        "descricao": "CEMIG"
+    },
+    {
+        "siglar": "OPCT3",
+        "descricao": "OceanPact"
+    },
+    {
+        "siglar": "AMAR3",
+        "descricao": "Lojas Marisa"
+    },
+    {
+        "siglar": "JFEN3",
+        "descricao": "João Fortes"
+    },
+    {
+        "siglar": "EVEN3",
+        "descricao": "Even"
+    },
+    {
+        "siglar": "SEER3",
+        "descricao": "Ser Educacional"
+    },
+    {
+        "siglar": "DASA3",
+        "descricao": "Dasa"
+    },
+    {
+        "siglar": "LEVE3",
+        "descricao": "Mahle Metal Leve"
+    },
+    {
+        "siglar": "ITUB3",
+        "descricao": "Itaú Unibanco"
+    },
+    {
+        "siglar": "KRSA3",
+        "descricao": "Kora Saúde"
+    },
+    {
+        "siglar": "ORVR3",
+        "descricao": "Orizon"
+    },
+    {
+        "siglar": "BRIT3",
+        "descricao": "Brisanet"
+    },
+    {
+        "siglar": "MILS3",
+        "descricao": "Mills"
+    },
+    {
+        "siglar": "JSLG3",
+        "descricao": "JSL"
+    },
+    {
+        "siglar": "VULC3",
+        "descricao": "Vulcabras"
+    },
+    {
+        "siglar": "TUPY3",
+        "descricao": "Tupy"
+    },
+    {
+        "siglar": "BLAU3",
+        "descricao": "Blau Farmacêutica"
+    },
+    {
+        "siglar": "LAVV3",
+        "descricao": "Lavvi Incorporadora"
+    },
+    {
+        "siglar": "LUPA3",
+        "descricao": "Lupatech"
+    },
+    {
+        "siglar": "VVEO3",
+        "descricao": "Viveo"
+    },
+    {
+        "siglar": "SGPS3",
+        "descricao": "Springs"
+    },
+    {
+        "siglar": "AGRO3",
+        "descricao": "BrasilAgro"
+    },
+    {
+        "siglar": "VLID3",
+        "descricao": "Valid"
+    },
+    {
+        "siglar": "NGRD3",
+        "descricao": "Neogrid"
+    },
+    {
+        "siglar": "CSED3",
+        "descricao": "Cruzeiro do Sul Educacional"
+    },
+    {
+        "siglar": "SHUL4",
+        "descricao": "Schulz"
+    },
+    {
+        "siglar": "RCSL3",
+        "descricao": "Recrusul"
+    },
+    {
+        "siglar": "SYNE3",
+        "descricao": "SYN"
+    },
+    {
+        "siglar": "TRAD3",
+        "descricao": "Traders Club"
+    },
+    {
+        "siglar": "FRAS3",
+        "descricao": "Fras-le"
+    },
+    {
+        "siglar": "MATD3",
+        "descricao": "Mater Dei"
+    },
+    {
+        "siglar": "KLBN3",
+        "descricao": "Klabin"
+    },
+    {
+        "siglar": "LOGG3",
+        "descricao": "LOG CP"
+    },
+    {
+        "siglar": "RNEW4",
+        "descricao": "Renova Energia"
+    },
+    {
+        "siglar": "WIZC3",
+        "descricao": "Wiz Soluções"
+    },
+    {
+        "siglar": "HBRE3",
+        "descricao": "HBR Realty"
+    },
+    {
+        "siglar": "ARML3",
+        "descricao": "Armac"
+    },
+    {
+        "siglar": "TASA4",
+        "descricao": "Taurus"
+    },
+    {
+        "siglar": "PFRM3",
+        "descricao": "Profarma"
+    },
+    {
+        "siglar": "NINJ3",
+        "descricao": "GetNinjas"
+    },
+    {
+        "siglar": "UNIP6",
+        "descricao": "Unipar"
+    },
+    {
+        "siglar": "VIVR3",
+        "descricao": "Viver"
+    },
+    {
+        "siglar": "MDNE3",
+        "descricao": "Moura Dubeux"
+    },
+    {
+        "siglar": "PINE4",
+        "descricao": "PINE"
+    },
+    {
+        "siglar": "ROMI3",
+        "descricao": "Indústrias ROMI"
+    },
+    {
+        "siglar": "SAPR3",
+        "descricao": "Sanepar"
+    },
+    {
+        "siglar": "PNVL3",
+        "descricao": "Dimed"
+    },
+    {
+        "siglar": "TAEE4",
+        "descricao": "Taesa"
+    },
+    {
+        "siglar": "PRNR3",
+        "descricao": "Priner"
+    },
+    {
+        "siglar": "TFCO4",
+        "descricao": "Track & Field"
+    },
+    {
+        "siglar": "ENJU3",
+        "descricao": "Enjoei"
+    },
+    {
+        "siglar": "BMOB3",
+        "descricao": "Bemobi"
+    },
+    {
+        "siglar": "SOJA3",
+        "descricao": "Boa Safra Sementes"
+    },
+    {
+        "siglar": "FESA4",
+        "descricao": "Ferbasa"
+    },
+    {
+        "siglar": "ITSA3",
+        "descricao": "Itaúsa"
+    },
+    {
+        "siglar": "SHOW3",
+        "descricao": "Time For Fun"
+    },
+    {
+        "siglar": "DESK3",
+        "descricao": "Desktop"
+    },
+    {
+        "siglar": "UCAS3",
+        "descricao": "Unicasa"
+    },
+    {
+        "siglar": "TAEE3",
+        "descricao": "Taesa"
+    },
+    {
+        "siglar": "ALPK3",
+        "descricao": "Estapar"
+    },
+    {
+        "siglar": "TECN3",
+        "descricao": "Technos"
+    },
+    {
+        "siglar": "TGMA3",
+        "descricao": "Tegma"
+    },
+    {
+        "siglar": "LPSB3",
+        "descricao": "Lopes"
+    },
+    {
+        "siglar": "GOAU3",
+        "descricao": "Metalúrgica Gerdau"
+    },
+    {
+        "siglar": "PDTC3",
+        "descricao": "Padtec"
+    },
+    {
+        "siglar": "IGTI3",
+        "descricao": "Iguatemi"
+    },
+    {
+        "siglar": "IGTI3",
+        "descricao": "Jereissati Participações"
+    },
+    {
+        "siglar": "DMVF3",
+        "descricao": "D1000 Varejo Farma"
+    },
+    {
+        "siglar": "DEXP3",
+        "descricao": "Dexxos"
+    },
+    {
+        "siglar": "SANB4",
+        "descricao": "Banco Santander"
+    },
+    {
+        "siglar": "VITT3",
+        "descricao": "Vittia"
+    },
+    {
+        "siglar": "USIM3",
+        "descricao": "Usiminas"
+    },
+    {
+        "siglar": "ETER3",
+        "descricao": "Eternit"
+    },
+    {
+        "siglar": "BRKM3",
+        "descricao": "Braskem"
+    },
+    {
+        "siglar": "LAND3",
+        "descricao": "Terra Santa"
+    },
+    {
+        "siglar": "PORT3",
+        "descricao": "Wilson Sons"
+    },
+    {
+        "siglar": "TCSA3",
+        "descricao": "Tecnisa"
+    },
+    {
+        "siglar": "ELMD3",
+        "descricao": "Eletromidia"
+    },
+    {
+        "siglar": "MELK3",
+        "descricao": "Melnick"
+    },
+    {
+        "siglar": "GGBR3",
+        "descricao": "Gerdau"
+    },
+    {
+        "siglar": "CTNM4",
+        "descricao": "Coteminas"
+    },
+    {
+        "siglar": "WEST3",
+        "descricao": "Westwing"
+    },
+    {
+        "siglar": "AGXY3",
+        "descricao": "AgroGalaxy"
+    },
+    {
+        "siglar": "TPIS3",
+        "descricao": "Triunfo"
+    },
+    {
+        "siglar": "PDGR3",
+        "descricao": "PDG Realty"
+    },
+    {
+        "siglar": "DOTZ3",
+        "descricao": "Dotz"
+    },
+    {
+        "siglar": "INEP4",
+        "descricao": "Inepar"
+    },
+    {
+        "siglar": "APER3",
+        "descricao": "Alper"
+    },
+    {
+        "siglar": "SANB3",
+        "descricao": "Banco Santander"
+    },
+    {
+        "siglar": "RSID3",
+        "descricao": "Rossi Residencial"
+    },
+    {
+        "siglar": "POMO3",
+        "descricao": "Marcopolo"
+    },
+    {
+        "siglar": "CSUD3",
+        "descricao": "CSU Cardsystem"
+    },
+    {
+        "siglar": "OIBR4",
+        "descricao": "Oi"
+    },
+    {
+        "siglar": "BRAP3",
+        "descricao": "Bradespar"
+    },
+    {
+        "siglar": "CTSA4",
+        "descricao": "Santanense"
+    },
+    {
+        "siglar": "LOGN3",
+        "descricao": "Log-In"
+    },
+    {
+        "siglar": "EUCA4",
+        "descricao": "Eucatex"
+    },
+    {
+        "siglar": "EQPA3",
+        "descricao": "Equatorial Energia Pará"
+    },
+    {
+        "siglar": "CAMB3",
+        "descricao": "Cambuci"
+    },
+    {
+        "siglar": "AALR3",
+        "descricao": "Alliança"
+    },
+    {
+        "siglar": "INEP3",
+        "descricao": "Inepar"
+    },
+    {
+        "siglar": "BMEB4",
+        "descricao": "Banco Mercantil do Brasil"
+    },
+    {
+        "siglar": "BRSR3",
+        "descricao": "Banrisul"
+    },
+    {
+        "siglar": "BOBR4",
+        "descricao": "Bombril"
+    },
+    {
+        "siglar": "PMAM3",
+        "descricao": "Paranapanema"
+    },
+    {
+        "siglar": "COCE5",
+        "descricao": "Coelce"
+    },
+    {
+        "siglar": "RNEW3",
+        "descricao": "Renova Energia"
+    },
+    {
+        "siglar": "DOHL4",
+        "descricao": "Döhler"
+    },
+    {
+        "siglar": "TASA3",
+        "descricao": "Taurus"
+    },
+    {
+        "siglar": "WHRL4",
+        "descricao": "Whirlpool"
+    },
+    {
+        "siglar": "ALUP4",
+        "descricao": "Alupar"
+    },
+    {
+        "siglar": "CEBR6",
+        "descricao": "CEB"
+    },
+    {
+        "siglar": "PTNT4",
+        "descricao": "Pettenati"
+    },
+    {
+        "siglar": "ATOM3",
+        "descricao": "ATOM"
+    },
+    {
+        "siglar": "CGRA4",
+        "descricao": "Grazziotin"
+    },
+    {
+        "siglar": "OSXB3",
+        "descricao": "OSX Brasil"
+    },
+    {
+        "siglar": "BEES3",
+        "descricao": "Banestes"
+    },
+    {
+        "siglar": "ALLD3",
+        "descricao": "Allied"
+    },
+    {
+        "siglar": "MTSA4",
+        "descricao": "METISA"
+    },
+    {
+        "siglar": "RDNI3",
+        "descricao": "RNI"
+    },
+    {
+        "siglar": "HAGA4",
+        "descricao": "Haga"
+    },
+    {
+        "siglar": "VSTE3",
+        "descricao": "LE LIS BLANC"
+    },
+    {
+        "siglar": "LVTC3",
+        "descricao": "WDC Networks"
+    },
+    {
+        "siglar": "RAPT3",
+        "descricao": "Randon"
+    },
+    {
+        "siglar": "ALUP3",
+        "descricao": "Alupar"
+    },
+    {
+        "siglar": "SNSY5",
+        "descricao": "Sansuy"
+    },
+    {
+        "siglar": "ALPA3",
+        "descricao": "Alpargatas"
+    },
+    {
+        "siglar": "FRTA3",
+        "descricao": "Pomi Frutas"
+    },
+    {
+        "siglar": "WHRL3",
+        "descricao": "Whirlpool"
+    },
+    {
+        "siglar": "CLSC4",
+        "descricao": "Celesc"
+    },
+    {
+        "siglar": "ENGI4",
+        "descricao": "Energisa"
+    },
+    {
+        "siglar": "UNIP3",
+        "descricao": "Unipar"
+    },
+    {
+        "siglar": "FHER3",
+        "descricao": "Fertilizantes Heringer"
+    },
+    {
+        "siglar": "BPAC5",
+        "descricao": "Banco BTG Pactual"
+    },
+    {
+        "siglar": "ATMP3",
+        "descricao": "Atma"
+    },
+    {
+        "siglar": "CEBR3",
+        "descricao": "CEB"
+    },
+    {
+        "siglar": "RPMG3",
+        "descricao": "Refinaria de Manguinhos"
+    },
+    {
+        "siglar": "BAZA3",
+        "descricao": "Banco da Amazônia"
+    },
+    {
+        "siglar": "TEKA4",
+        "descricao": "Teka"
+    },
+    {
+        "siglar": "BAHI3",
+        "descricao": "Bahema"
+    },
+    {
+        "siglar": "NEXP3",
+        "descricao": "Brasil Brokers"
+    },
+    {
+        "siglar": "BSLI4",
+        "descricao": "Banco de Brasília"
+    },
+    {
+        "siglar": "CRPG5",
+        "descricao": "Tronox Pigmentos"
+    },
+    {
+        "siglar": "EALT4",
+        "descricao": "Electro Aço Altona"
+    },
+    {
+        "siglar": "EPAR3",
+        "descricao": "EPAR3"
+    },
+    {
+        "siglar": "BIOM3",
+        "descricao": "Biomm"
+    },
+    {
+        "siglar": "ENGI3",
+        "descricao": "Energisa"
+    },
+    {
+        "siglar": "EMAE4",
+        "descricao": "EMAE"
+    },
+    {
+        "siglar": "CGRA3",
+        "descricao": "Grazziotin"
+    },
+    {
+        "siglar": "NUTR3",
+        "descricao": "Nutriplant"
+    },
+    {
+        "siglar": "MWET4",
+        "descricao": "Wetzel"
+    },
+    {
+        "siglar": "BSLI3",
+        "descricao": "Banco de Brasília"
+    },
+    {
+        "siglar": "BEES4",
+        "descricao": "Banestes"
+    },
+    {
+        "siglar": "DEXP4",
+        "descricao": "Dexxos"
+    },
+    {
+        "siglar": "OFSA3",
+        "descricao": "Ourofino Saúde Animal"
+    },
+    {
+        "siglar": "BPAC3",
+        "descricao": "Banco BTG Pactual"
+    },
+    {
+        "siglar": "TRPL3",
+        "descricao": "Transmissão Paulista"
+    },
+    {
+        "siglar": "SCAR3",
+        "descricao": "São Carlos"
+    },
+    {
+        "siglar": "ENMT3",
+        "descricao": "Energisa MT"
+    },
+    {
+        "siglar": "MNDL3",
+        "descricao": "Mundial"
+    },
+    {
+        "siglar": "HOOT4",
+        "descricao": "Hotéis Othon"
+    },
+    {
+        "siglar": "REDE3",
+        "descricao": "Rede Energia"
+    },
+    {
+        "siglar": "MNPR3",
+        "descricao": "Minupar"
+    },
+    {
+        "siglar": "CGAS5",
+        "descricao": "Comgás"
+    },
+    {
+        "siglar": "CEDO4",
+        "descricao": "Cedro Têxtil"
+    },
+    {
+        "siglar": "EUCA3",
+        "descricao": "Eucatex"
+    },
+    {
+        "siglar": "BMIN4",
+        "descricao": "Banco Mercantil de Investimentos"
+    },
+    {
+        "siglar": "IGTI4",
+        "descricao": "Jereissati Participações"
+    },
+    {
+        "siglar": "IGTI4",
+        "descricao": "Iguatemi"
+    },
+    {
+        "siglar": "BDLL4",
+        "descricao": "Bardella"
+    },
+    {
+        "siglar": "HAGA3",
+        "descricao": "Haga"
+    },
+    {
+        "siglar": "CEEB3",
+        "descricao": "COELBA"
+    },
+    {
+        "siglar": "MGEL4",
+        "descricao": "Mangels"
+    },
+    {
+        "siglar": "TELB4",
+        "descricao": "Telebras"
+    },
+    {
+        "siglar": "RSUL4",
+        "descricao": "Metalúrgica Riosulense"
+    },
+    {
+        "siglar": "BGIP4",
+        "descricao": "Banese"
+    },
+    {
+        "siglar": "FRIO3",
+        "descricao": "Metalfrio"
+    },
+    {
+        "siglar": "EKTR4",
+        "descricao": "Elektro"
+    },
+    {
+        "siglar": "PEAB3",
+        "descricao": "Participações Aliança da Bahia"
+    },
+    {
+        "siglar": "WLMM4",
+        "descricao": "WLM"
+    },
+    {
+        "siglar": "MRSA3B""descricao,:""MRS Logística"
+    },
+    {
+        "siglar": "TELB3",
+        "descricao": "Telebras"
+    },
+    {
+        "siglar": "CRIV4",
+        "descricao": "Alfa Financeira"
+    },
+    {
+        "siglar": "CTSA3",
+        "descricao": "Santanense"
+    },
+    {
+        "siglar": "CRPG6",
+        "descricao": "Tronox Pigmentos"
+    },
+    {
+        "siglar": "EQMA3B""descricao,:""Equatorial Maranhão"
+    },
+    {
+        "siglar": "CSRN3",
+        "descricao": "COSERN"
+    },
+    {
+        "siglar": "CEED3",
+        "descricao": "CEEE D"
+    },
+    {
+        "siglar": "BMEB3",
+        "descricao": "Banco Mercantil do Brasil"
+    },
+    {
+        "siglar": "LUXM4",
+        "descricao": "Trevisa"
+    },
+    {
+        "siglar": "CALI3",
+        "descricao": "Adolpho Lindenberg"
+    },
+    {
+        "siglar": "FIEI3",
+        "descricao": "FIEI3"
+    },
+    {
+        "siglar": "BMKS3",
+        "descricao": "Monark"
+    },
+    {
+        "siglar": "GEPA4",
+        "descricao": "Rio Paranapanema Energia"
+    },
+    {
+        "siglar": "CEBR5",
+        "descricao": "CEB"
+    },
+    {
+        "siglar": "PTNT3",
+        "descricao": "Pettenati"
+    },
+    {
+        "siglar": "EALT3",
+        "descricao": "Electro Aço Altona"
+    },
+    {
+        "siglar": "AFLT3",
+        "descricao": "Afluente T"
+    },
+    {
+        "siglar": "BMIN3",
+        "descricao": "Banco Mercantil de Investimentos"
+    },
+    {
+        "siglar": "BRIV4",
+        "descricao": "Alfa Investimento"
+    },
+    {
+        "siglar": "CGAS3",
+        "descricao": "Comgás"
+    },
+    {
+        "siglar": "BNBR3",
+        "descricao": "Banco do Nordeste"
+    },
+    {
+        "siglar": "BRGE12""descricao,:""Consórcio Alfa"
+    },
+    {
+        "siglar": "UNIP5",
+        "descricao": "Unipar"
+    },
+    {
+        "siglar": "FESA3",
+        "descricao": "Ferbasa"
+    },
+    {
+        "siglar": "CLSC3",
+        "descricao": "Celesc"
+    },
+    {
+        "siglar": "EQPA5",
+        "descricao": "Equatorial Energia Pará"
+    },
+    {
+        "siglar": "RPAD6",
+        "descricao": "Alfa Holdings"
+    },
+    {
+        "siglar": "ESTR4",
+        "descricao": "Estrela"
+    },
+    {
+        "siglar": "NORD3",
+        "descricao": "Nordon"
+    },
+    {
+        "siglar": "BRGE6",
+        "descricao": "Consórcio Alfa"
+    },
+    {
+        "siglar": "EQPA7",
+        "descricao": "Equatorial Energia Pará"
+    },
+    {
+        "siglar": "CRPG3",
+        "descricao": "Tronox Pigmentos"
+    },
+    {
+        "siglar": "SNSY3",
+        "descricao": "Sansuy"
+    },
+    {
+        "siglar": "CEED4",
+        "descricao": "CEEE D"
+    },
+    {
+        "siglar": "CPLE5",
+        "descricao": "Copel"
+    },
+    {
+        "siglar": "AVLL3",
+        "descricao": "Alphaville"
+    },
+    {
+        "siglar": "JOPA3",
+        "descricao": "Josapar"
+    },
+    {
+        "siglar": "BALM4",
+        "descricao": "Baumer"
+    },
+    {
+        "siglar": "CTKA4",
+        "descricao": "Karsten"
+    },
+    {
+        "siglar": "MRSA5B""descricao,:""MRS Logística"
+    },
+    {
+        "siglar": "MAPT4",
+        "descricao": "Cemepe"
+    },
+    {
+        "siglar": "CSAB4",
+        "descricao": "Cia. de Seg. Aliança da Bahia"
+    },
+    {
+        "siglar": "CRIV3",
+        "descricao": "Alfa Financeira"
+    },
+    {
+        "siglar": "BGIP3",
+        "descricao": "Banese"
+    },
+    {
+        "siglar": "CTKA3",
+        "descricao": "Karsten"
+    },
+    {
+        "siglar": "BALM3",
+        "descricao": "Baumer"
+    },
+    {
+        "siglar": "RPAD3",
+        "descricao": "Alfa Holdings"
+    },
+    {
+        "siglar": "PLAS3",
+        "descricao": "Plascar"
+    },
+    {
+        "siglar": "CSRN5",
+        "descricao": "COSERN"
+    },
+    {
+        "siglar": "BRIV3",
+        "descricao": "Alfa Investimento"
+    },
+    {
+        "siglar": "BAUH4",
+        "descricao": "Excelsior"
+    },
+    {
+        "siglar": "GEPA3",
+        "descricao": "Rio Paranapanema Energia"
+    },
+    {
+        "siglar": "GSHP3",
+        "descricao": "General Shopping & Outlets"
+    },
+    {
+        "siglar": "DTCY3",
+        "descricao": "Dtcom"
+    },
+    {
+        "siglar": "ENMT4",
+        "descricao": "Energisa MT"
+    },
+    {
+        "siglar": "CEDO3",
+        "descricao": "Cedro Têxtil"
+    },
+    {
+        "siglar": "RPAD5",
+        "descricao": "Alfa Holdings"
+    },
+    {
+        "siglar": "MERC4",
+        "descricao": "Mercantil do Brasil Financeira"
+    },
+    {
+        "siglar": "BRKM6",
+        "descricao": "Braskem"
+    },
+    {
+        "siglar": "CEEB5",
+        "descricao": "COELBA"
+    },
+    {
+        "siglar": "AHEB3",
+        "descricao": "São Paulo Turismo"
+    },
+    {
+        "siglar": "BRGE3",
+        "descricao": "Consórcio Alfa"
+    },
+    {
+        "siglar": "MOAR3",
+        "descricao": "Monteiro Aranha"
+    },
+    {
+        "siglar": "PATI3",
+        "descricao": "Panatlântica"
+    },
+    {
+        "siglar": "DOHL3",
+        "descricao": "Döhler"
+    },
+    {
+        "siglar": "BRGE5",
+        "descricao": "Consórcio Alfa"
+    },
+    {
+        "siglar": "CSRN6",
+        "descricao": "COSERN"
+    },
+    {
+        "siglar": "TKNO4",
+        "descricao": "Tekno"
+    },
+    {
+        "siglar": "CSAB3",
+        "descricao": "Cia. de Seg. Aliança da Bahia"
+    },
+    {
+        "siglar": "HETA4",
+        "descricao": "Hercules"
+    },
+    {
+        "siglar": "CTNM3",
+        "descricao": "Coteminas"
+    },
+    {
+        "siglar": "BRSR5",
+        "descricao": "Banrisul"
+    },
+    {
+        "siglar": "BDLL3",
+        "descricao": "Bardella"
+    },
+    {
+        "siglar": "ELET5",
+        "descricao": "Eletrobras"
+    },
+    {
+        "siglar": "WLMM3",
+        "descricao": "WLM"
+    },
+    {
+        "siglar": "SOND6",
+        "descricao": "Sondotécnica"
+    },
+    {
+        "siglar": "CBEE3",
+        "descricao": "Ampla Energia"
+    },
+    {
+        "siglar": "SOND5",
+        "descricao": "Sondotécnica"
+    },
+    {
+        "siglar": "GPAR3",
+        "descricao": "CELGPAR"
+    },
+    {
+        "siglar": "SQIA3",
+        "descricao": "Sinqia"
+    },
+    {
+        "siglar": "HBTS5",
+        "descricao": "Habitasul"
+    },
+    {
+        "siglar": "ESTR3",
+        "descricao": "Estrela"
+    },
+    {
+        "siglar": "BRGE11""descricao,:""Consórcio Alfa"
+    },
+    {
+        "siglar": "BRGE8",
+        "descricao": "Consórcio Alfa"
+    },
+    {
+        "siglar": "BRGE7",
+        "descricao": "Consórcio Alfa"
+    },
+    {
+        "siglar": "MRSA6B""descricao,:""MRS Logística"
+    },
+    {
+        "siglar": "ALSO3",
+        "descricao": "Aliansce Sonae"
+    },
+    {
+        "siglar": "BRPR3",
+        "descricao": "BR Properties"
+    },
+    {
+        "siglar": "LIPR3",
+        "descricao": "Eletropar"
+    },
+    {
+        "siglar": "PATI4",
+        "descricao": "Panatlântica"
+    },
+    {
+        "siglar": "MTSA3",
+        "descricao": "METISA"
+    },
+    {
+        "siglar": "SLED4",
+        "descricao": "Saraiva"
+    },
+    {
+        "siglar": "SLED3",
+        "descricao": "Saraiva"
+    },
+    {
+        "siglar": "EQPA6",
+        "descricao": "Equatorial Energia Pará"
+    },
+    {
+        "siglar": "AHEB6",
+        "descricao": "São Paulo Turismo"
+    },
+    {
+        "siglar": "PINE3",
+        "descricao": "PINE"
+    },
+    {
+        "siglar": "VIIA3",
+        "descricao": "VIIA3"
+    },
+    {
+        "siglar": "EKTR3",
+        "descricao": "Elektro"
+    },
+    {
+        "siglar": "MWET3",
+        "descricao": "Wetzel"
+    },
+    {
+        "siglar": "USIM6",
+        "descricao": "Usiminas"
+    },
+    {
+        "siglar": "AHEB5",
+        "descricao": "São Paulo Turismo"
+    },
+    {
+        "siglar": "ENBR3",
+        "descricao": "EDP Brasil"
+    },
+    {
+        "siglar": "BOAS3",
+        "descricao": "Boa Vista"
+    },
+    {
+        "siglar": "PEAB4",
+        "descricao": "Participações Aliança da Bahia"
+    },
+    {
+        "siglar": "COCE3",
+        "descricao": "Coelce"
+    },
+    {
+        "siglar": "JOPA4",
+        "descricao": "Josapar"
+    },
+    {
+        "siglar": "MODL3",
+        "descricao": "Banco Modal"
+    },
+    {
+        "siglar": "MERC3",
+        "descricao": "Mercantil do Brasil Financeira"
+    },
+    {
+        "siglar": "DMFN3",
+        "descricao": "DMFN3"
+    },
+    {
+        "siglar": "CEGR3",
+        "descricao": "Naturgy (CEG)"
+    },
+    {
+        "siglar": "MAPT3",
+        "descricao": "Cemepe"
+    },
+    {
+        "siglar": "CRDE3",
+        "descricao": "CR2"
+    },
+    {
+        "siglar": "IGBR3",
+        "descricao": "IGB Eletrônica"
+    },
+    {
+        "siglar": "MSPA4",
+        "descricao": "Melhoramentos"
+    },
+    {
+        "siglar": "ODER4",
+        "descricao": "Conservas Oderich"
+    },
+    {
+        "siglar": "PARD3",
+        "descricao": "Hermes Pardini"
+    },
+    {
+        "siglar": "CASN3",
+        "descricao": "CASAN"
+    },
+    {
+        "siglar": "WIZS3",
+        "descricao": "WIZS3"
+    },
+    {
+        "siglar": "LLIS3",
+        "descricao": "LLIS3"
+    },
+    {
+        "siglar": "MSPA3",
+        "descricao": "Melhoramentos"
+    },
+    {
+        "siglar": "BRML3",
+        "descricao": "BRMalls"
+    },
+    {
+        "siglar": "DMMO3",
+        "descricao": "Dommo Energia"
+    },
+    {
+        "siglar": "GETT3",
+        "descricao": "Getnet"
+    },
+    {
+        "siglar": "GETT4",
+        "descricao": "Getnet"
+    },
+    {
+        "siglar": "SULA4",
+        "descricao": "SulAmérica"
+    },
+    {
+        "siglar": "SULA3",
+        "descricao": "SulAmérica"
+    },
+    {
+        "siglar": "CEPE5",
+        "descricao": "CELPE"
+    },
+    {
+        "siglar": "TCNO4",
+        "descricao": "Tecnosolo"
+    },
+    {
+        "siglar": "TCNO3",
+        "descricao": "Tecnosolo"
+    },
+    {
+        "siglar": "CEPE6",
+        "descricao": "CELPE"
+    },
+    {
+        "siglar": "BKBR3",
+        "descricao": "BKBR3"
+    },
+    {
+        "siglar": "MTIG4",
+        "descricao": "Metalgráfica Iguaçu"
+    },
+    {
+        "siglar": "BLUT4",
+        "descricao": "Blue Tech Solutions"
+    },
+    {
+        "siglar": "BLUT3",
+        "descricao": "Blue Tech Solutions"
+    },
+    {
+        "siglar": "MODL4",
+        "descricao": "Banco Modal"
+    },
+    {
+        "siglar": "CARD3",
+        "descricao": "CARD3"
+    },
+    {
+        "siglar": "SHUL3",
+        "descricao": "Schulz"
+    },
+    {
+        "siglar": "FIGE3",
+        "descricao": "Investimentos Bemge"
+    },
+    {
+        "siglar": "FNCN3",
+        "descricao": "Finansinos"
+    },
+    {
+        "siglar": "TEKA3",
+        "descricao": "Teka"
+    },
+    {
+        "siglar": "HETA3",
+        "descricao": "Hercules"
+    },
+    {
+        "siglar": "LCAM3",
+        "descricao": "Locamerica"
+    },
+    {
+        "siglar": "BIDI4",
+        "descricao": "Banco Inter"
+    },
+    {
+        "siglar": "BIDI3",
+        "descricao": "Banco Inter"
+    },
+    {
+        "siglar": "EEEL4",
+        "descricao": "CEEE GT"
+    },
+    {
+        "siglar": "EEEL3",
+        "descricao": "CEEE GT"
+    },
+    {
+        "siglar": "BBRK3",
+        "descricao": "BBRK3"
+    },
+    {
+        "siglar": "SOND3",
+        "descricao": "Sondotécnica"
+    },
+    {
+        "siglar": "CESP6",
+        "descricao": "CESP"
+    },
+    {
+        "siglar": "CESP3",
+        "descricao": "CESP"
+    },
+    {
+        "siglar": "CESP5",
+        "descricao": "CESP"
+    },
+    {
+        "siglar": "ECPR4",
+        "descricao": "Encorpar"
+    },
+    {
+        "siglar": "MOSI3",
+        "descricao": "Mosaico"
+    },
+    {
+        "siglar": "POWE3",
+        "descricao": "Focus Energia"
+    },
+    {
+        "siglar": "ECPR3",
+        "descricao": "Encorpar"
+    },
+    {
+        "siglar": "GNDI3",
+        "descricao": "NotreDame Intermédica"
+    },
+    {
+        "siglar": "LAME4",
+        "descricao": "Lojas Americanas"
+    },
+    {
+        "siglar": "LAME3",
+        "descricao": "Lojas Americanas"
+    },
+    {
+        "siglar": "OMGE3",
+        "descricao": "Omega Geração"
+    },
+    {
+        "siglar": "IGTA3",
+        "descricao": "IGTA3"
+    },
+    {
+        "siglar": "JPSA3",
+        "descricao": "JPSA3"
+    },
+    {
+        "siglar": "BRDT3",
+        "descricao": "BRDT3"
+    },
+    {
+        "siglar": "JBDU4",
+        "descricao": "JBDU4"
+    },
+    {
+        "siglar": "JBDU3",
+        "descricao": "JBDU3"
+    },
+    {
+        "siglar": "HGTX3",
+        "descricao": "Hering"
+    },
+    {
+        "siglar": "CCPR3",
+        "descricao": "CCPR3"
+    },
+    {
+        "siglar": "DTEX3",
+        "descricao": "DTEX3"
+    },
+    {
+        "siglar": "VVAR3",
+        "descricao": "VVAR3"
+    },
+    {
+        "siglar": "PNVL4",
+        "descricao": "Dimed"
+    },
+    {
+        "siglar": "TESA3",
+        "descricao": "Terra Santa"
+    },
+    {
+        "siglar": "BTOW3",
+        "descricao": "BTOW3"
+    },
+    {
+        "siglar": "LINX3",
+        "descricao": "Linx"
+    },
+    {
+        "siglar": "BTTL3",
+        "descricao": "Embpar"
+    },
+    {
+        "siglar": "GPCP3",
+        "descricao": "GPCP3"
+    },
+    {
+        "siglar": "GPCP4",
+        "descricao": "GPCP4"
+    },
+    {
+        "siglar": "SMLS3",
+        "descricao": "Smiles"
+    },
+    {
+        "siglar": "MMXM3",
+        "descricao": "MMX Mineração"
+    },
+    {
+        "siglar": "BSEV3",
+        "descricao": "Biosev"
+    },
+    {
+        "siglar": "CNTO3",
+        "descricao": "CNTO3"
+    },
+    {
+        "siglar": "TIET4",
+        "descricao": "AES Tietê Energia"
+    },
+    {
+        "siglar": "TIET3",
+        "descricao": "AES Tietê Energia"
+    },
+    {
+        "siglar": "CORR4",
+        "descricao": "Corrêa Ribeiro"
+    },
+    {
+        "siglar": "CEPE3",
+        "descricao": "CELPE"
+    },
+    {
+        "siglar": "CALI4",
+        "descricao": "Adolpho Lindenberg"
+    },
+    {
+        "siglar": "SNSY6",
+        "descricao": "Sansuy"
+    },
+    {
+        "siglar": "CASN4",
+        "descricao": "CASAN"
+    },
+    {
+        "siglar": "EMAE3",
+        "descricao": "EMAE"
+    },
+    {
+        "siglar": "BPAR3",
+        "descricao": "Banpará"
+    },
+    {
+        "siglar": "APTI4",
+        "descricao": "Aliperti"
+    },
+    {
+        "siglar": "VSPT3",
+        "descricao": "FCA"
+    },
+    {
+        "siglar": "MTIG3",
+        "descricao": "Metalgráfica Iguaçu"
+    },
+    {
+        "siglar": "FIGE4",
+        "descricao": "Investimentos Bemge"
+    },
+    {
+        "siglar": "LUXM3",
+        "descricao": "Trevisa"
+    },
+    {
+        "siglar": "TKNO3",
+        "descricao": "Tekno"
+    },
+    {
+        "siglar": "COCE6",
+        "descricao": "Coelce"
+    },
+    {
+        "siglar": "MGEL3",
+        "descricao": "Mangels"
+    },
+    {
+        "siglar": "CTSA8",
+        "descricao": "Santanense"
+    },
+    {
+        "siglar": "MMAQ4",
+        "descricao": "Minasmáquinas"
+    }
+]

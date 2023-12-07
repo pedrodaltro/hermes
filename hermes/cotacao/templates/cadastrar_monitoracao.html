@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Cadastre uma monitoração</h1>
+    <form action="{% url 'cadastrar_monitoracao' id_investidor %}" method="POST">
+        {% csrf_token %}
+        {{ form.as_table }}
+        <input type="submit" value="Salvar">
+    </form>
+</body>
+</html>

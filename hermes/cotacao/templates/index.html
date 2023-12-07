@@ -10,7 +10,7 @@
     <form action="{% url 'cadastrar_investidor' %}" >
      <button class="btn btn-primary" type="submit">Cadastrar</button>
     </form>
-    <table class="table">
+    <table class="table" border="1">
       <thead>
           <tr>
               <th>Nome</th>
@@ -22,17 +22,17 @@
                 <tr>
                     <td>{{ investidor.nome }}</td>
                     <td>{{ investidor.email }}</td>
-                    <td>
+                    <td colspan="1">
                         <form action="{% url 'salao_investidor' investidor.id %}" >
                          <button class="btn btn-primary" type="submit">Selecionar</button>
                         </form>
-                    </td>
-                    <td>
+
+
                         <form action="{% url 'editar_investidor' investidor.id %}" >
                          <button class="btn btn-primary" type="submit">Editar</button>
                         </form>
-                    </td>
-                    <td>
+
+
                         <form action="{% url 'excluir_investidor' investidor.id %}" >
                          <button class="btn btn-primary" type="submit">Excluir</button>
                         </form>

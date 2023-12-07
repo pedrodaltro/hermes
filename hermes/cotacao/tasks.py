@@ -1,54 +1,49 @@
 from celery import shared_task
-from django.http import HttpResponse
 from datetime import datetime
 from django.conf import settings
 from django.core.mail import send_mail as sm
-#import pandas_datareader.data as pdr
 import yfinance as yf
 from cotacao.models import Monitoracao, Cotacao
 
-#yfinance.pdr_override()
 
-@shared_task(name="enviar_email", bind=True, default_retry_delay=300, max_retries=5)
-def enviar_email(self, subject, message):
-
-    # Fetch all users except superuser
-    #users = User.objects.exclude(is_superuser=True).all()
-    user_emails = ['pedro.daltro@gmail.com', 'pedro.daltro@live.com']
-
+@shared_task(name="enviar_email", bind=True, default_retry_delay=120, max_retries=3)
+def enviar_email(self, titulo, mensagem, email):
     # try sending email
     try:
         res = sm(
-            subject=subject,
-            html_message=message,
+            subject=titulo,
+            html_message=mensagem,
             from_email=settings.EMAIL_HOST_USER,
-            recipient_list=user_emails,
+            recipient_list=[email],
             fail_silently=False,
             message=None)
-        print(f'Email send to {len(user_emails)} users')
     except Exception:
 
         # retry when fail
         enviar_email.retry()
 
-@shared_task(name="send_notification", bind=True, default_retry_delay=300, max_retries=5)
-def checar_tunel_preco(id_monitoracao):
+
+@shared_task(name="checar_tunel_preco", bind=True, default_retry_delay=120, max_retries=3)
+def checar_tunel_preco(self, id_monitoracao):
     try:
-        monitoracao = Monitoracao.objects.get(id_monitoracao=id_monitoracao)
-        sigla = monitoracao.ativoB3.sigla
-        data = datetime.now()
-        cotacao = yf.download(sigla, start=data, end=data)
-        valor = cotacao['Close']
-        Cotacao.objects.create(dataHora=data, valor=100, monitoracao=id_monitoracao)
+        monitoracao = Monitoracao.objects.get(id=id_monitoracao)
+        ativo_b3 = monitoracao.ativoB3.sigla
+        valor = cotar(ativo_b3)
+        Cotacao.objects.create(valor=valor, monitoracao=monitoracao)
         if valor < monitoracao.limiteInferior:
-            mensagem = f'Chegou a hora boa para comprar a ação {sigla}'
-            enviar_email(mensagem, mensagem)
+            titulo = f'Oportunidade de compra da ação {ativo_b3}'
+            mensagem = f'A ação {ativo_b3}, atingiu o preço para compra'
+            enviar_email.delay(mensagem, mensagem)
         elif valor < monitoracao.limiteSuperior:
-            mensagem = f'Chegou a hora boa para vender a ação {sigla}'
-            enviar_email(mensagem, mensagem)
+            titulo = f'Oportunidade de venda da ação {ativo_b3}'
+            mensagem = f'A ação {ativo_b3}, atingiu o preço para venda'
+
+            enviar_email.delay(titulo, mensagem, monitoracao.investidor.email)
 
     except Exception:
         checar_tunel_preco.retry()
 
-
-    #resultado = pegar_cotacao(["VALE3.SA", "PETR3.SA", "BVSP"])
+def cotar(acao):
+    a = yf.Ticker(acao)
+    d = a.info
+    return d['currentPrice']

@@ -1,9 +1,10 @@
 from django.db import models
+from django.core.validators import MaxValueValidator, MinValueValidator
 import uuid
 
 
 class Investidor(models.Model):
-    id = models.CharField(primary_key=True,default=uuid.uuid4, editable=False, max_length=36)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     email = models.EmailField(max_length=250)
     nome = models.CharField(max_length=200)
 
@@ -19,15 +20,17 @@ class AtivoB3(models.Model):
         return self.sigla
 
 class Monitoracao(models.Model):
-    id = models.CharField(primary_key=True,default=uuid.uuid4, editable=False, max_length=36)
-    periodicidade = models.IntegerField()
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    periodicidade = models.PositiveIntegerField(default=1,
+        validators=[MaxValueValidator(60), MinValueValidator(1)])
     investidor = models.ForeignKey(Investidor, on_delete=models.CASCADE)
     ativoB3 = models.ForeignKey(AtivoB3, on_delete=models.CASCADE)
-    limiteSuperior = models.IntegerField(default=0)
-    limiteInferior = models.IntegerField(default=0)
+    limiteSuperior = models.DecimalField(max_digits=19, decimal_places=2, blank=True, null=True, default=0.00)
+    limiteInferior = models.DecimalField(max_digits=19, decimal_places=2, blank=True, null=True, default=0.00)
+    task = models.BigIntegerField(default=0)
 
 class Cotacao(models.Model):
-    id = models.CharField(primary_key=True,default=uuid.uuid4, editable=False, max_length=36)
-    dataHora = models.DateTimeField(blank=True, null=True)
-    valor = models.IntegerField(blank=True, null=True)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    dataHora = models.DateTimeField(auto_now_add=True)
+    valor = models.DecimalField(max_digits=19, decimal_places=2)
     monitoracao = models.ForeignKey(Monitoracao, on_delete=models.CASCADE)

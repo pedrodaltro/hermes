@@ -11,10 +11,9 @@ class InvestidorForm(forms.ModelForm):
 class MonitoracaoForm(forms.ModelForm):
     class Meta:
         model = Monitoracao
-        exclude = ["id", "ultimo_valor", "investidor"]
+        exclude = ["id", "task", "investidor"]
         labels = {
             "periodicidade": "Período da consulta em minutos",
-            "investidor": "Investidor",
             "ativoB3": " Ativo B3",
             "limiteSuperior": " Valor Venda",
             "limiteInferior": " Valor Compra"
