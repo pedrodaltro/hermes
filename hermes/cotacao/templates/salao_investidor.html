@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Hermes</title>
+</head>
+<body>
+    <h1> Olá {{ investidor.nome }}, aqui você pode observar a evolução dos seus ativos cadastrados</h1>
+</body>
+
+<div>
+    <body>
+        <form action="{% url 'cadastrar_monitoracao' investidor.id %}" >
+            {% csrf_token %}
+            <button class="btn btn-primary" type="submit">Cadastrar</button>
+        </form>
+    </body>
+</div>
+
+<body>
+  <table class="table" border="1">
+      <thead colspan="2">
+          <tr>
+              <th> Configuração da cotação do ativo</th>
+          </tr>
+      </thead>
+      <tbody>
+            <tr>
+              <th>Ativo</th>
+              <th>Tempo para cotação/min</th>
+            </tr>
+            {% for monitoracao in monitoracoes %}
+                <tr>
+                    <td>{{ monitoracao.ativoB3.sigla }}</td>
+                    <td>{{ monitoracao.periodicidade }}</td>
+                    <td>
+                        <form action="{% url 'historico_cotacoes' monitoracao.id %}" >
+                         <button class="btn btn-primary" type="submit">Selecionar</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="{% url 'editar_monitoracao' monitoracao.id %}" >
+                         <button class="btn btn-primary" type="submit">Editar</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form action="{% url 'excluir_monitoracao' monitoracao.id %}" >
+                         <button class="btn btn-primary" type="submit">Excluir</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+      </tbody>
+    </table>
+</body>
+</html>
