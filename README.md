@@ -25,6 +25,10 @@ python manage.py createsuperuser
 ```
 Configurar o servidor de envio de e-mail no arquivo settings
 
+Adicionar a carga de dados na tabela AcoesB3 com o comando
+```
+python manage.py loaddata ativob3.json
+```
 Inicializar a aplicação com o comando
 ```
 python manage.py runserver
@@ -33,7 +37,7 @@ A aplicação poderá ser acessada através da url localhost:8000 e localhost:80
 
 Ao acessar a aplicação será necessário cadastrar um investidor, em seguida selecionar um investidar cadastrado, e cadastrar uma rotina de monitoração para este investidor
 
-Para que a task agendas possam ser executadas é necessário iniciar o celery através do comando
+Para que a task agendas possam ser executadas é necessário iniciar o celery, é navegar até a pasta do app chamado hermes e rodar o comando
 ```
 python -m celery -A hermes worker --beat -l INFO
 ```

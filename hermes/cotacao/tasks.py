@@ -4,7 +4,9 @@ from django.conf import settings
 from django.core.mail import send_mail as sm
 import yfinance as yf
 from cotacao.models import Monitoracao, Cotacao
+import logging
 
+logger = logging.getLogger(__name__)
 
 @shared_task(name="enviar_email", bind=True, default_retry_delay=120, max_retries=3)
 def enviar_email(self, titulo, mensagem, email):
@@ -29,6 +31,7 @@ def checar_tunel_preco(self, id_monitoracao):
         monitoracao = Monitoracao.objects.get(id=id_monitoracao)
         ativo_b3 = monitoracao.ativoB3.sigla
         valor = cotar(ativo_b3)
+        logger.info(f'{ativo_b3} = {valor} = {datetime.now()}')
         Cotacao.objects.create(valor=valor, monitoracao=monitoracao)
         if valor < monitoracao.limiteInferior:
             titulo = f'Oportunidade de compra da ação {ativo_b3}'

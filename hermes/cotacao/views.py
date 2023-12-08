@@ -92,7 +92,6 @@ def cadastrar_monitoracao(request, id_investidor):
     if request.method == "POST":
         investidor = Investidor.objects.get(id=id_investidor)
         form = MonitoracaoForm(request.POST)
-        print('Aqui', investidor)
         if form.is_valid():
             monitoracao = form.save(commit=False)
             monitoracao.investidor = investidor
@@ -161,10 +160,10 @@ def cadastrar_task_cotacao(ativo_b3, id_investidor, tempo, id_monitoracao):
     )
     task = PeriodicTask.objects.create(
         crontab=schedule,
-        name=f'{ativo_b3}_{id_investidor}',
+        name=f'{ativo_b3}_{id_monitoracao}',
         task='checar_tunel_preco',
         args=json.dumps([f'{id_monitoracao}']),
     )
-
+    print('A task', task.id)
     return task.id
 
