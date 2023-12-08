@@ -13,7 +13,7 @@ class MonitoracaoForm(forms.ModelForm):
         model = Monitoracao
         exclude = ["id", "task", "investidor"]
         labels = {
-            "periodicidade": "Período da consulta em minutos",
+            "periodicidade": "Períodicidade da consulta em minutos",
             "ativoB3": " Ativo B3",
             "limiteSuperior": " Valor Venda",
             "limiteInferior": " Valor Compra"
