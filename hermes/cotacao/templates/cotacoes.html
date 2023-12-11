@@ -21,7 +21,7 @@
             {% for cotacao in cotacoes %}
                 <tr>
                     <td>{{ cotacao.monitoracao.ativoB3 }}</td>
-                    <td>{{ cotacao.dataHora }}</td>
+                    <td>{{ cotacao.dataHora|date:'d-m-Y H:i:s' }}</td>
                     <td>R$ {{ cotacao.valor }}</td>
                 </tr>
             {% endfor %}

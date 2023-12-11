@@ -140,6 +140,9 @@ def editar_monitoracao(request, id_monitoracao):
 def excluir_monitoracao(request, id_monitoracao):
     monitoracao = Monitoracao.objects.get(id=id_monitoracao)
     investidor = Investidor.objects.get(id=monitoracao.investidor.id)
+    tarefa_agendada = PeriodicTask.objects.filter(id=monitoracao.task)
+    if tarefa_agendada is not None:
+        tarefa_agendada.delete()
     monitoracao.delete()
     monitoracoes = Monitoracao.objects.all()
     context = {

@@ -21,19 +21,6 @@ app.autodiscover_tasks()
 def debug_task(self):
     print(f'Request: {self.request!r}')
 
-# We used CELERY_BROKER_URL in settings.py instead of:
-# app.conf.broker_url = ''
-
-# We used CELERY_BEAT_SCHEDULER in settings.py instead of:
-# app.conf.beat_scheduler = ''django_celery_beat.schedulers.DatabaseScheduler'
-
-# app.conf.beat_schedule = {
-#     'send-email-5-minuts': {
-#         'task': 'enviar_email',
-#         'schedule': crontab(minute='*/2'), #crontab(hour=7, minute=30, day_of_week=1)
-#         'args': ('Teste celery', 'Huru, deu certo!')
-#     },
-# }
 
 #app.conf.timezone = 'UTC'
 
