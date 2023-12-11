@@ -33,14 +33,13 @@ def checar_tunel_preco(self, id_monitoracao):
         valor = cotar(ativo_b3)
         logger.info(f'{ativo_b3} = {valor} = {datetime.now()}')
         Cotacao.objects.create(valor=valor, monitoracao=monitoracao)
-        if valor < monitoracao.limiteInferior:
+        if valor <= monitoracao.limiteInferior:
             titulo = f'Oportunidade de compra da ação {ativo_b3}'
-            mensagem = f'A ação {ativo_b3}, atingiu o preço para compra'
-            enviar_email.delay(mensagem, mensagem)
-        elif valor < monitoracao.limiteSuperior:
+            mensagem = f'A ação {ativo_b3}, atingiu o preço para compra R$ {valor} <= R$ {monitoracao.limiteInferior}'
+            enviar_email.delay(titulo, mensagem, monitoracao.investidor.email)
+        elif valor >= monitoracao.limiteSuperior:
             titulo = f'Oportunidade de venda da ação {ativo_b3}'
-            mensagem = f'A ação {ativo_b3}, atingiu o preço para venda'
-
+            mensagem = f'A ação {ativo_b3}, atingiu o preço para venda R$ {valor} >= R$ {monitoracao.limiteSuperior}'
             enviar_email.delay(titulo, mensagem, monitoracao.investidor.email)
 
     except Exception:
