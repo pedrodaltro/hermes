@@ -23,8 +23,15 @@ Realizar a criação de um super usuário para acessar o painel administrativo /
 ```
 python manage.py createsuperuser
 ```
-Configurar o servidor de envio de e-mail no arquivo settings
-
+Configurar o servidor de envio de e-mail no arquivo settings:
+```
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST = ''
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+```
 Adicionar a carga de dados na tabela AcoesB3 com o comando
 ```
 python manage.py loaddata ativob3.json
@@ -35,7 +42,12 @@ python manage.py runserver
 ```
 A aplicação poderá ser acessada através da url localhost:8000 e localhost:8000/admin
 
-Ao acessar a aplicação será necessário cadastrar um investidor, em seguida selecionar um investidar cadastrado, e cadastrar uma rotina de monitoração para este investidor
+Ao acessar a aplicação será necessário cadastrar um investidor, em seguida selecionar um investidor cadastrado e cadastrar uma rotina de monitoração para este investidor. No cadastro da rotina serão solicitadas as informações de periodicidade de consulta em minutos, valor de compra e valor de veda, que serao o limite inferior e superior do túnel de preço. Quando uma ação atingir estes valores ou cruza-los um e-mail será enviado.
+
+### 🔧 Agendamento das tarefas
+Para o agendamento das tarefas é necessário seguir os passos abaixo:
+
+Instalar o Redis ou o Broker de sua escolha, caso escolha um borker diferente do Redis, será necessário alterar as configurações.
 
 Para que a task agendas possam ser executadas é necessário iniciar o celery, é navegar até a pasta do app chamado hermes e rodar o comando
 ```
@@ -46,5 +58,6 @@ Obs.: O celery na sua versão 5 não funciona em ambiente windows, recomendo a a
 ## 🛠️ Construído com
 
 * [Django] - O framework web usado
+* [yfinance] - Biblioteca para consulta dos preços das ações
 * [Celery] - Agendamento e execução das tasks
 * [Redis] - Broker para gerenciamento das task
